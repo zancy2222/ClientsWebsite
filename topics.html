@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOPICS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+.main {
+    width: 100%;
+    height: auto;
+    background-image: url(topicspic.jpg);
+    background-position: top;
+    background-size: cover;
+}
+    
+    .main-container {
+        width: 80%;
+        max-width: 1200px;
+
+    }
+    
+    h2, h4 {
+        color: white;
+    }
+    
+    h2 {
+        font-size: 1.5rem; /* Adjust font size for the title */
+        text-align: center;
+        color: white;
+        margin-bottom: 20px;
+    }
+    
+    h4 {
+        font-size: 18px; /* Adjust font size for subheadings */
+    }
+    
+    .p-topics {
+        font-size: 14px; /* Adjust font size for paragraphs */
+        text-align: left;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+    
+    hr {
+        border-color: rgb(255, 255, 255);
+        margin: 20px 0;
+    }
+
+    .h2-topics{
+        color: white;
+        border: none;
+        font-size: 22.5px;
+    }
+
+    .title1{
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    font-size: 24px;
+    color: white;
+    text-align: left;
+    }
+</style>
+
+
+<body>
+    <main class = "main">
+        <div class = "filter">
+            <div class = "main-container"> <!--container-->
+                 <div class = "wrapper">
+                    <h2 class="title1">TOPICS OF INTEREST<br/>
+                        BUT NOT LIMITED TO</h2>
+                    <h2 class ="h2-topics" id="des">INFORMATION TECHNOLOGY TRACK</h2>
+                    <h4>∙ Data Science and Machine Learning</h4>
+                    <p class = "p-topics">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Artificial Neural Network, Fuzzy Systems, Hybrid Systems, Evolutionary Computation, Knowledge Discovery, Knowledge Transfer, Decision Support, Recommender Systems, Text Mining, Web Mining, Big Data, Data Mining and Natural Language Processing.</p>
+                    <h4>∙ Data Network and Communication</h4>
+                    <p class = "p-topics">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computer Network, Security &amp; Forensic, Wireless &amp; Sensor Network, Telecommunication, Mobile Ad-Hoc Network, Cloud &amp; Grid Computing, Decentralized computing, P2P networks, P2P protocols, Semantic P2P networks.</p>
+                    <h4>∙ Information Technology and System Engineering</h4>
+                    <p class = "p-topics">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Knowledge Management, Web Application, Web Service, Management Information System, Customer Relation Management, Ontology, Semantic Web and Enterprise Resource Planning, and Software engineering.</p>
+                    <h4>∙ Learning Science</h4>
+                    <p class = "p-topics">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Web-based Learning, Mobile Learning, E-Learning, Intelligent E-Learning Systems, Interactive E-Learning Systems, Distance Learning, Life-long Learning , Innovative Pedagogies, Active learning, Project Based Learning and Engineering Education and Knowledge Management in E-Learning.</p>
+
+                    <hr> 
+
+                    <h2 class ="h2-topics" id="des" class="comp">COMPUTER SCIENCE TRACK</h2>
+                    <h4>∙ MODELING & SIMULATION</h4>
+                    <h4>∙ DISTRIBUTED AND PARALLEL SYSTEM & ALGORITHMS</h4>
+                    <h4>∙ DSP/IMAGE PROCESSING/PATTERN RECOGNITION/ MULTIMEDIA</h4>
+                    <h4>∙ ALGORITHMS AND BIOINFORMATICS</h4>
+                    <hr>
+
+                    <h2 class ="h2-topics" id="des" class="comp">COMPUTER ENGINEERING TRACK</h2>
+                    <h4>∙ Smart agriculture</h4>
+                    <h4>∙ Robotics</h4>
+                    <h4>∙ Internet of things</h4>
+                    <h4>∙ Wireless communication systems</h4>
+                    <h4>∙ Data converters</h4>
+                    <h4>∙ Digital circuits</h4>
+                    <h4>∙ Energy harvesting</h4>
+                    <h4>∙ Sensing systems</h4>
+                    <h4>∙ Hardware DSP implementation</h4>
+
+                    <hr>
+
+                    <h2 class ="h2-topics" id="des" class="comp">BUSINESS TRACK</h2>
+                    <h4>∙ Accounting, Finance and Banking</h4>
+                    <h4>∙ E-Commerce</h4>
+                    <h4>∙ Economics</h4>
+                    <h4>∙ Entrepreneurship, Innovation and Small Business Management</h4>
+                    <h4>∙ Leadership, Organizational Behavior and Human Resource Management</h4>
+                    <h4>∙ Marketing and Retail</h4>
+                    <h4>∙ Critical Management Studies</h4>
+                    <h4>∙ Gender in Management</h4>
+                    <h4>∙ Cultural and Creative Industries</h4>
+                    <h4>∙ Operation, Logistics and Supply Chain Management</h4>
+                    <h4>∙ Tourism and Hospitality Management</h4>
+                </div>
+
+                
+                
+                
+                    <ul class = "navigation">
+                        
+                    <li><a href="index.html">HOME</a></li>      
+
+                    <li class=""><a href="intro.html">INTRO</a></li>
+            
+                    <li class=""><a href="registration.html">REGISTRATION</a></li>
+            
+                    <li class="topicsNav"><a href="topics.html">TOPICS</a></li>
+            
+                    <li class=""><a href="call.html">CALL FOR PAPER</a></li>
+            
+                    <li class=""><a href="team.html">THE TEAM</a></li>
+            
+                    <li class=""><a href="publication.html">PUBLICATION</a></li>
+            
+                    <li class=""><a href="about.html">ABOUT</a></li>
+                    </ul>
+                </div>
+            </div>     
+        </main>
+   
+</body>
+
+<script>
+    
+    document.querySelector(".topicsNav").classList.add('is-toggled');
+
+
+    const textCredit = document.querySelector(".text-credit");
+    const navigation = document.querySelector(".navigation");
+    const main = document.querySelector(".main");
+
+    function animation() {
+
+        textCredit.classList.add('fade-up');
+        navigation.classList.add('fade-up');
+        main.classList.add('show-up');
+    }
+    //render
+    animation();
+</script>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE TEAM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    .main-team {
+    width: 100%;
+    height: 100vh;
+    background-image: url(peopletech.jpg);
+    background-position: top;
+    background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+}
+
+.filter-team {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    
+}
+
+.name-container {
+    text-align: center; /* Center the content horizontally */
+    max-width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 1rem 1rem;
+    margin-top: 2rem;
+    border-top: solid 2px white;
+    border-bottom: solid 2px white;
+}
+
+h4 {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration-line: underline;
+    letter-spacing: 4px;
+    margin-bottom: 1rem; /* Add margin below the heading */
+}
+
+p {
+    text-shadow: none;
+    letter-spacing: normal;
+    margin-top: 0.5rem; /* Add smaller top margin for paragraphs */
+    margin-bottom: 0.5rem; /* Add smaller bottom margin for paragraphs */
+    text-align: center;
+}
+
+small {
+    color: white;
+    display: block; /* Display the small text as block element */
+    margin-top: 0.5rem; /* Add margin between small text and paragraphs */
+}
+</style>
+
+
+<body>
+   
+    <main class = "main-team">
+        <div class = "filter-team"> <!--wrapper-->
+            <h4>THE TEAM</h4>
+            <div class = "name-container">
+                <div>
+                    <p>Allan R. Lao, MBA, MIT</p>
+                    <small>Supervising Chair</small>
+                
+                    <p>Nilo Romyr H. Saavedra, MBA, CPME, PMITAP</p>
+                    <small>Supervising Chair</small>
+
+                    <p>Jeoffrey B. Layco</p>
+                    <small>Conference Chair</small>
+
+                    <p>Janelli M. Mendez, MIT</p>
+                    <small>Conference Co-chair Chair</small>
+
+                    <p>Randulf Elvin F. Andrafa, MIT</p>
+                    <small>Conference Co-chair</small>
+
+                    <p>Paolo Gatchallan Dolo, CTP</p>
+                    <small>Conference Co-chair</small>
+
+                    <p>John Carmelo C. Apilado, CMITAP</p>
+                    <small>Conference Co-chair</small>
+
+                    <p>DR. DANIEL D. DASIG JR, MIT</p>
+                    <small>Consultant for National Conference</small>
+
+                    <hr style="width: 70%; text-align: center; margin: 2rem auto; font-size: 2px;">
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+        <ul class = "navigation">
+                               
+            <li><a href="index.html">HOME</a></li>      
+
+            <li class=""><a href="intro.html">INTRO</a></li>
+    
+            <li class=""><a href="registration.html">REGISTRATION</a></li>
+    
+            <li class=""><a href="topics.html">TOPICS</a></li>
+    
+            <li class=""><a href="call.html">CALL FOR PAPER</a></li>
+    
+            <li class="teamNav"><a href="team.html">THE TEAM</a></li>
+    
+            <li class=""><a href="publication.html">PUBLICATION</a></li>
+    
+            <li class=""><a href="about.html">ABOUT</a></li>
+            </ul>
+
+
+</body>
+
+<script>
+    
+    document.querySelector(".teamNav").classList.add('is-toggled');
+
+    const navigation = document.querySelector(".navigation");
+    const main = document.querySelector(".main-team");
+
+    function animation() {
+
+        navigation.classList.add('show-up');
+        main.classList.add('show-up');
+    }
+    //render
+    animation();
+</script>
+
+</html>

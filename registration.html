@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTRODUCTION</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+.registration-main {
+    width: 100%;
+    height: 100vh;
+    background-image: url(registration.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registration-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1.5rem;
+}
+
+h4 {
+    color: white;
+    text-decoration: underline;
+    letter-spacing: 5px;
+    font-size: 2rem;
+    text-decoration-skip-ink: auto; 
+    text-underline-position: under;
+    padding:2rem 0;
+}
+
+.introduction-paragraph {
+    text-shadow: none;
+    text-align: start;
+}
+
+.grid-layout {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.7rem;
+    background-color: rgba(0, 0, 0, 0.0);
+    border: solid 1px white;
+    color: white;
+    margin-top: 0.5rem;
+}
+
+button {
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    border: none;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: grey;
+}
+
+.button-reset {
+    border-left: solid 1px white;
+    border-top: solid 1px white;
+    background-color: transparent;
+    color: white;
+    transition-duration: 0.3s;
+    animation: ease;
+}
+
+
+
+</style>
+
+
+<body>
+    <main class ="registration-main">
+        <div class = "registration-wrapper">
+           <h4>REGISTRATION</h4>
+            <div class = "grid-layout">
+                <div>
+                    <p class = "introduction-paragraph">EMAIL</p>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <p class = "introduction-paragraph">SCHOOL/ORGANIZATION</p>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <p class = "introduction-paragraph">FIRST NAME</p>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <p class = "introduction-paragraph">LAST NAME</p>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <p class = "introduction-paragraph">PHONE NUMBER</p>
+                    <input type="text">
+                </div>
+                <div></div>
+                
+                <div>
+                    <button class = "button-register">REGISTER</button>
+                    <button class = "button-reset">RESET</button>
+                </div>
+            </div>  
+           
+        </div>
+    </main>
+   
+
+        <ul class = "navigation">
+                                
+            <li><a href="index.html">HOME</a></li>  
+
+            <li class=""><a href="intro.html">INTRO</a></li>
+    
+            <li class="registrationNav"><a href="registration.html">REGISTRATION</a></li>
+    
+            <li class=""><a href="topics.html">TOPICS</a></li>
+    
+            <li class=""><a href="call.html">CALL FOR PAPER</a></li>
+    
+            <li class=""><a href="team.html">THE TEAM</a></li>
+    
+            <li class=""><a href="publication.html">PUBLICATION</a></li>
+    
+            <li class=""><a href="about.html">ABOUT</a></li>
+            </ul>
+
+</body>
+
+<script>
+    
+    document.querySelector(".registrationNav").classList.add('is-toggled');
+
+
+
+    const navigation = document.querySelector(".navigation");
+    const main = document.querySelector(".registration-main");
+
+    function animation() {
+
+        navigation.classList.add('show-up');
+        main.classList.add('show-up');
+    }
+    //render
+    animation();
+</script>
+
+</html>

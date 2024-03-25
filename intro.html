@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTRODUCTION</title>
+    <link rel="stylesheet" href="intro.css">
+</head>
+
+<style>
+    .main {
+        width: 100%;
+        height: 100vh;
+        background-image: url(intro.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+    }
+    
+    .filter {
+        width: 100%;
+        max-width: 800px; /* Adjust maximum width as needed */
+        margin: 0 auto; /* Center horizontally */
+        padding: 20px; /* Add padding */
+    }
+    
+    .intro {
+        margin-bottom: 20px; /* Add margin below the intro */
+    }
+    
+    .center-box {
+        width: 100% ;
+        height: 230px; /* Adjust maximum Height of img */
+        background: linear-gradient(to bottom, #5A575A, #474956, #667083);
+        border-radius: 10px;
+    }
+    
+    .text-containerd {
+        text-align: justify;
+        color: white;
+        font-size: 12px;
+        max-width: 98%;
+        margin-top: 20px; /* Adjust margin-top */
+        margin-bottom: 20px; /* Add margin below the text */
+        padding: 0 20px;
+    }
+    
+    .text-containerd p {
+        margin-bottom: 20px;
+        font-size: 0.9em;
+    }
+    
+
+</style>
+
+
+<body>
+    <main class = "main">
+        <div class = "filter">
+            <div class = "main-container">
+                <div class="intro">
+                    <h1 class="text-intr">INTRO</h1>
+                    <hr style="border-color: white; margin-top: 5px;">
+
+                </div>
+                <div class="center-box"></div> <!-- Center box -->
+                <div class="text-containerd">
+                    <p>
+                        The Lorma College - College of Computer Studies and Engineering in cooperation with the College of Business will be holding the 1st National Conference on Computing, Engineering and Business (NCCEB2018), with the theme: “Fusing Business, IT and Engineering for a Smarter Nation”, on December 4 and 5, 2018 at the Founder’s Building, Lorma Colleges – Carlatan Campus, San Fernando City La Union. This is one of the projects of the College recognized as Commission on Higher Education (CHED) Center of Development in Information Technology Education and a venue for students to present and share their research work and solutions along the fields of information technology, engineering and business as indicated in Section 8, CMO no. 25 series of 2015.
+                    </p>
+                    <p>
+                        The event will provide presentations delivered by researchers from the keynote speakers, community of scholars, including presentations from faculty researchers, industry practitioners, graduate and undergraduate research works.
+                    </p>
+                    <p>
+                        The conference will award the following Conference Awards for the Faculty/Professional and Student Researchers including the Best Paper ( Professional and Student Category- Full Paper Only) and Best Poster Paper.
+                    </p>
+                    <p>
+                        All the registered papers will be included in Conference Proceedings with ISSN from the National Library of the Philippines and School Research Journal. All submitted papers will be reviewed by a minimum of two reviewers.
+                    </p>
+                </div>
+                    
+                
+                
+                    <ul class = "navigation">
+                    
+                    <li><a href="index.html">HOME</a></li>    
+
+                    <li class="introNav"><a href="intro.html">INTRO</a></li>
+            
+                    <li class=""><a href="registration.html">REGISTRATION</a></li>
+            
+                    <li class=""><a href="topics.html">TOPICS</a></li>
+            
+                    <li class=""><a href="call.html">CALL FOR PAPER</a></li>
+            
+                    <li class=""><a href="team.html">THE TEAM</a></li>
+            
+                    <li class=""><a href="publication.html">PUBLICATION</a></li>
+            
+                    <li class=""><a href="about.html">ABOUT</a></li>
+                    </ul>
+                </div>
+            </div>     
+        </main>
+   
+</body>
+
+<script>
+    
+    document.querySelector(".introNav").classList.add('is-toggled');
+
+    const textContainer = document.querySelector('.text-container');
+    const textCredit = document.querySelector(".text-credit");
+    const navigation = document.querySelector(".navigation");
+    const main = document.querySelector(".main");
+
+    function animation() {
+        textContainer.classList.add('fade-up');
+        textCredit.classList.add('fade-up');
+        navigation.classList.add('show-up');
+        main.classList.add('show-up');
+    }
+    //render
+    animation();
+</script>
+
+</html>

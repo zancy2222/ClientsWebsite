@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALL FOR PAPER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<style>
+.main-section {
+    width: 100%;
+    height: 100vh;
+    background-image: url(paper.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container {
+    margin: 0.5rem;
+    margin-bottom: 6rem;
+    width: 1200px;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.call-container {
+    width: 100%;
+    height: 16rem;
+    background: rgb(155,234,184);
+    background: linear-gradient(75deg, rgba(155,234,184,1) 16%, rgba(169,233,255,1) 48%, rgba(161,204,255,1) 83%, rgba(161,243,255,1) 94%);
+}
+
+.h4-call{
+    color: white;
+    text-align: start;
+    text-decoration: underline;
+    text-decoration-color: orange;
+    text-decoration-thickness: 5px;
+    text-decoration-style: solid;
+    font-size: 1.3rem;
+}
+
+.fa-x {
+    color: white;
+    text-align: end;
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+h5 {
+    color: white;
+    
+}
+
+small {
+    color: white;
+    letter-spacing: 4px;
+}
+
+.h4-time {
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+}
+
+.introduction-paragraph {
+    text-align: start;
+    text-shadow: none;
+    letter-spacing: 0px;
+    text-shadow: none;
+    font-size: 0.8;
+    margin-top: 0.3rem;
+}
+
+.rules {
+    display: flex;
+    font-weight: normal;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.h5-guidelines {
+    font-size: 1rem;
+}
+
+</style>
+
+
+<body>
+    <section class = "main-section">
+        <div class = "main-container"> <!--container-->
+            <i class="fa-solid fa-x"></i>
+            <h4 class = "h4-call">CALL FOR PAPER!</h4>
+            
+            <small>Lorem Ipsum Dolor</small>
+            <h4 class = "h4-time">76 Days -4HRS -22MINS -5SECS</h4>
+            <div class = "call-container"></div>
+            <!--<p class = "text-credit">©UNTITLED DESIGNS: <span>HTML5 UP</span></p>-->
+            <div class = "rules">
+                <h5 class = "h5-guidelines">SUBMISSION GUIDELINES</h5>
+                <p class = "introduction-paragraph">1. Authors should be recommended by the department concerned affiliated in any of the Higher Education Institutions (HEIs) of Region 1.</p>
+                <p class = "introduction-paragraph">2. The papers should follow the standard ACM Formal Full paper template and should indicate the name of the authors, and their HEI affiliation.</p>
+                <p class = "introduction-paragraph">3. All authors should submit original, unpublished and currently not in reviewed, and full research papers (4-6 pages) thru:https//easychair.org/cfp/____.</p>
+                <p class = "introduction-paragraph">4. All accepted posters should follow the NCCEB2018 poster template https://goo.gl/____.</p>
+                <p class = "introduction-paragraph">5. An author can only present one research paper (15 minutes) or poster (during the poster session) in the congress</p>
+                <p class = "introduction-paragraph">6. Authors of accepted papers and posters should register and pay the regular conferencefee of PHP 550.00 inclusive of AM and PM snacks, lunnch for two-days, and Congress Program (exclusive of accomodation).</p>
+            </div>
+
+        </div>
+            
+    </section>
+   
+
+<!--navigation-->
+<ul class = "navigation">
+                          
+    <li><a href="index.html">HOME</a></li>     
+
+    <li class=""><a href="intro.html">INTRO</a></li>
+
+    <li class=""><a href="registration.html">REGISTRATION</a></li>
+
+    <li class=""><a href="topics.html">TOPICS</a></li>
+
+    <li class="callNav"><a href="call.html">CALL FOR PAPER</a></li>
+
+    <li class=""><a href="team.html">THE TEAM</a></li>
+
+    <li class=""><a href="publication.html">PUBLICATION</a></li>
+
+    <li class=""><a href="about.html">ABOUT</a></li>
+    </ul>
+
+</body>
+
+<script>
+    
+    document.querySelector(".callNav").classList.add('is-toggled');
+
+
+
+    const navigation = document.querySelector(".navigation");
+    const main = document.querySelector(".main-section");
+
+    function animation() {
+ 
+
+        navigation.classList.add('show-up');
+        main.classList.add('show-up');
+    }
+    //render
+    animation();
+</script>
+
+</html>

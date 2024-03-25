@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        .text-container{
+            padding: 100px 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class = "main" id = "intro">
+        <div class = "filter-section">
+            <div class = "main-container"> <!--container-->
+                
+                <div class = "text-container">
+                    <h1>NCCEB LOGO</h1>
+                    <p>4TH NATIONAL CONFERENCE ON COMPUTING ENGINEERING AND BUSINESS</p>
+
+                </div>
+                   
+                </div>
+            </div>     
+        </main>
+   
+        
+
+        
+
+        <div class = "navigation-index">
+                
+            <li class = "homeNav"><a href="index.html">HOME</a></li>
+
+            <li class=""><a href="intro.html">INTRO</a></li>
+    
+            <li class=""><a href="registration.html">REGISTRATION</a></li>
+    
+            <li class=""><a href="topics.html">TOPICS</a></li>
+    
+            <li class=""><a href="call.html">CALL FOR PAPER</a></li>
+    
+            <li class=""><a href="team.html">THE TEAM</a></li>
+    
+            <li class=""><a href="publication.html">PUBLICATION</a></li>
+    
+            <li class=""><a href="about.html">ABOUT</a></li>
+        </div>
+        
+
+
+        <script>
+            document.querySelector(".homeNav").classList.add('is-toggled');
+
+            //document.querySelector(".introNav").classList.add('is-toggled');
+            const textContainer = document.querySelector('.text-container');
+            const textCredit = document.querySelector(".text-credit");
+            const navigation = document.querySelector(".navigation-index");
+            const main = document.querySelector(".main");
+
+        
+
+            function animation() {
+                textContainer.classList.add('fade-up');
+                textCredit.classList.add('fade-up');
+                navigation.classList.add('show-up');
+                main.classList.add('show-up');
+                sectionContainer.classList.add('show-up')
+            }
+            
+            
+
+        
+        //render
+            animation();   
+        </script>
+</body>
+
+
+
+</html>
